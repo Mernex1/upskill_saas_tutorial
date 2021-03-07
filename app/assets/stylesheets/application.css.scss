@@ -20,16 +20,16 @@
 h1, h2 ,h3{
     font-family: 'Noto Sans JP', sans-serif;
 }
-.home-callout {
-    //Gradient prvided by @_ighosh at uiGradient.com
-    background: #654ea3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(right, #eaafc8, #654ea3);
-    background: -moz-linear-gradient(right, #eaafc8, #654ea3);
-    background: -o-linear-gradient(right, #eaafc8, #654ea3);
-    background: linear-gradient(to left, #eaafc8, #654ea3);  
-    /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}    
+.navbar-default .navbar-brand:hover {
+    background: -webkit-linear-gradient(left, #654ea3, #eaafc8); // We will need to generate gradient colors to complement the background.
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+.navbar-default .navbar-nav > li > a:hover{
+    background: -webkit-linear-gradient(left, #654ea3, #eaafc8); // We will need to generate gradient colors to complement the background.
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .navbar {
     border: none;
@@ -40,4 +40,15 @@ h1, h2 ,h3{
     margin-top: -20px;
     padding-top: 50px;
     padding-bottom: 100px;
+}
+.home-background {
+    /*Gradient prvided by @_ighosh at uiGradient.com/*
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #eaafc8, #654ea3);
+    background: -moz-linear-gradient(right, #eaafc8, #654ea3);
+    background: -o-linear-gradient(right, #eaafc8, #654ea3);
+    background: linear-gradient(to left, #eaafc8, #654ea3);
+    height: 100vh;
+    /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
