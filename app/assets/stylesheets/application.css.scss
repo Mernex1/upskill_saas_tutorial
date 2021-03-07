@@ -17,19 +17,22 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+// Typography Styles
 h1, h2 ,h3{
     font-family: 'Noto Sans JP', sans-serif;
 }
-.navbar-default .navbar-brand:hover {
-    background: -webkit-linear-gradient(left, #654ea3, #eaafc8); // We will need to generate gradient colors to complement the background.
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+// Color for navbar text & hovertext
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-nav > li > a {
+    color: gray;
+    // scss code to nest selectors &:@selector{}
+    &:hover {
+        // Gradient for text matching background
+        background: -webkit-linear-gradient(left, #654ea3, #eaafc8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 } 
-.navbar-default .navbar-nav > li > a:hover{
-    background: -webkit-linear-gradient(left, #654ea3, #eaafc8); // We will need to generate gradient colors to complement the background.
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .navbar {
     border: none;
@@ -41,6 +44,7 @@ h1, h2 ,h3{
     padding-top: 50px;
     padding-bottom: 100px;
 }
+// Gradient for background
 .home-background {
     /*Gradient prvided by @_ighosh at uiGradient.com/*
     background: #654ea3;  /* fallback for old browsers */
