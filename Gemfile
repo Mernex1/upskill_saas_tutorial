@@ -10,6 +10,8 @@ end
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 # Use Puma as the app server
 gem 'puma', '~> 3.4.0'
+# Use Font Awesome sass gem for adding icons
+gem 'font-awesome-sass', '4.6.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
