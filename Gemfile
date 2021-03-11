@@ -12,6 +12,8 @@ gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 gem 'puma', '~> 3.4.0'
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
+# Use Hirb for better database table display in console
+gem "hirb", '0.7.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
