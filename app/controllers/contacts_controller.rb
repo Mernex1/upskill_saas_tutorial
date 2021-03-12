@@ -11,10 +11,10 @@ class ContactsController < ApplicationController
       @contact = Contact.new(contact_params)
       #if you object.save it will save onto database
       if @contact.save
-         flash[:success] = "Message sent."
+         flash[:sucess] = "Message sent."
          redirect_to new_contact_path
       else
-        flash[:error] = @contact.errors.full_messages.join(", ")
+        flash[:danger] = @contact.errors.full_messages.join(", ")
         redirect_to new_contact_path
       end
    end
