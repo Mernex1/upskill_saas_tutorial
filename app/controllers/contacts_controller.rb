@@ -12,10 +12,10 @@ class ContactsController < ApplicationController
       #if you object.save it will save onto database
       if @contact.save
          flash[:sucess] = "Message sent."
-         redirect_to new_contact_path
+         redirect_to contact_us_path
       else
         flash[:danger] = @contact.errors.full_messages.join(", ")
-        redirect_to new_contact_path
+        redirect_to contact_us_path
       end
    end
    #creating a private def with the params that were filled out in new.html.erb
