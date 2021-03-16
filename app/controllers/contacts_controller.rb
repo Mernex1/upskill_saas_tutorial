@@ -11,6 +11,10 @@ class ContactsController < ApplicationController
       @contact = Contact.new(contact_params)
       #if you object.save it will save onto database
       if @contact.save
+         name = params[:contact][:name]
+         email = params[:contact][:email]
+         body = params[:contact][:comments]
+         ContactMailer.contact_email(name, email, body).deliver
          flash[:sucess] = "Message sent."
          redirect_to contact_us_path
       else
